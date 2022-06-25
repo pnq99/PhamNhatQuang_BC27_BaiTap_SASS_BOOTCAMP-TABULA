@@ -1,0 +1,77 @@
+@import "../Helpers/variables";
+
+footer {
+  .footer {
+    background-color: #a9027d;
+    .footer-wrapper {
+      padding: 72px 0;
+      .footer-content {
+        * {
+          color: $color-white;
+        }
+        .footer-content__header {
+          margin-bottom: 32px;
+        }
+        .footer-content__body {
+          .footer-content__item {
+            display: flex;
+            align-items: center;
+            font-size: $fs-2;
+            padding: 8px 0;
+            i {
+              font-size: $fs-3;
+              transition: all ease 0.3s;
+            }
+            span {
+              margin-right: 16px;
+            }
+            a {
+              text-decoration: none;
+              margin-right: 16px;
+              &:hover {
+                i {
+                  color: $color-text;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-content.list {
+        .footer-content__item {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          a {
+            text-decoration: none;
+            transition: all ease 0.3s;
+            &:hover {
+              color: rgba(0, 0, 0, 0.4);
+            }
+          }
+        }
+      }
+      .footer-content.newsletter {
+        .footer-content__body {
+          .newsletter-input {
+            color: $color-white;
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: $fs-2;
+            border: 1px solid $color-white;
+            background-color: $color-primary;
+          }
+          ::placeholder {
+            color: $color-white;
+          }
+          button {
+            width: 100%;
+            padding: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

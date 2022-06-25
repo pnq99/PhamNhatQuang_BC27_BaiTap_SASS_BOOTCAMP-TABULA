@@ -1,0 +1,29 @@
+.banner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  .top_image {
+    top: 0;
+    z-index: -100;
+    img {
+      width: 100%;
+        }
+    }
+  .bottom_image {
+    bottom: 0;
+    z-index: -100;
+    img {
+      width: 100%;
+        }
+    }
+}
+
+.banner {
+  .banner-content {
+    .banner-body {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

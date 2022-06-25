@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tabula</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/crest.png" />
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Oswald:wght@200&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./scss/main.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="overlay" id="overlay"></div>
+  <header id="navbar">
+    <div class="container">
+      <!-- Navigation Bar -->
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="nav__logo">
+          <div class="logo-wrapper">
+            <a href="" class="logo-link">
+              <img src="./assets/img/crest.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- nav -->
+        <div class="navigation" id="navigation" data-show="">
+          <div class="menu-button">
+            <button type="button" class="buttonShowNav" data-show="">
+              <i class="fa-solid fa-bars show"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="nav__logo">
+            <div class="logo-wrapper">
+              <a href="" class="logo-link">
+                <img src="./assets/img/crest.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- navbar -->
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link scale-up" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scale-up active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scale-up" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scale-up" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scale-up" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scale-up" href="#">Elements</a>
+            </li>
+          </ul>
+
+          <!-- contact bar -->
+          <div class="nav__contact-bar">
+            <div class="nav__contact-bar-wrapper">
+              <a class="btn btn-primary nav__contact-btn">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>(+1) 555 234-8765</span>
+              </a>
+              <div class="nav__contact-social">
+                <a href="" class="nav__contact-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="nav__contact-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="nav__contact-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="" class="nav__contact-icon">
+                  <i class="fa-brands fa-instagram-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner original-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center">
+          <div class="banner-content">
+            <span class="d-block sub-title-s-fs text-color-primary mg-bt-8">ABOUT US</span>
+            <span class="h1 d-block">The language teaching experts</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="banner-content">
+            <div class="banner-header"></div>
+            <div class="banner-body">
+              <img src="./assets/img/hero_team.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top_image section_coverage_image">
+      <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/yellow_top_wave_01.png"
+        alt="top-header-img" />
+    </div>
+
+    <div class="bottom_image section_coverage_image">
+      <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Violet_top_left_wave.png"
+        alt="top-header-img" />
+    </div>
+  </section>
+
+  <!-- OUR TEAM SECTION -->
+  <section class="original-section our-team">
+    <div class="container">
+      <div class="our-team__wrapper pd-y-32">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_1.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_1.jpg"
+                      title="teacher_1"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_1.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> ITALIAN </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> July Roberts </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing
+                      elit.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_2.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_2.jpg"
+                      title="teacher_2"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_2.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> FRENCH </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> Jon Stone </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Nanotechnology immersion along the information.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_3.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_3.jpg"
+                      title="teacher_3"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_3.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> JAPANESE </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> Emma Stone </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Bring to the table win-win survival strategies to ensure.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_4.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_4.jpg"
+                      title="teacher_4"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_4.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> CHINESE </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> Mark Lee </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Proactive domination. At the end of the day, going forward.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_5.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_5.jpg"
+                      title="teacher_5"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_5.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> RUSSIAN </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> John Doe </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      A new normal that has evolved from generation X.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_6.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_6.jpg"
+                      title="teacher_6"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_6.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> SWEDEN </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> Jane Smith </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Heading towards a streamlined cloud solution.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_7.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_7.jpg"
+                      title="teacher_7"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_7.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> SPANISH </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> Hanna Alverez </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Content in real-time will have multiple touchpoints.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+            <div class="content-box">
+              <div class="content-box__card">
+                <div class="card__img">
+                  <span>
+                    <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_8.jpg"
+                      data-image_src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_8.jpg"
+                      title="teacher_8"
+                      alt="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/teacher_8.jpg"
+                      class="btLazyLoadImage btLazyLoaded" />
+                  </span>
+                </div>
+                <div class="card__separate mg-bt-16"></div>
+                <div class="card__content">
+                  <div class="card__content-heading">
+                    <span> ITALIAN </span>
+                  </div>
+                  <div class="card__content-name">
+                    <span> July Roberts </span>
+                  </div>
+                  <div class="card__content-desc">
+                    <span>
+                      Capitalize on low hanging fruit to identify a ballpark.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__separate pd-bt-32"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_image section_coverage_image">
+      <img
+        src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Wave_White_bottom_right_shape_01.png" />
+    </div>
+  </section>
+
+  <!-- FIND YOUR COURSE -->
+  <section class="original-section find-course">
+    <div class="container">
+      <div class="find-course__wrapper pd-y-16 mx-auto">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="find-course__content">
+              <div class="find-course__header"></div>
+              <div class="find-course__body">
+                <img src="./assets/img/conatct_inner.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-center flex-column align-items-center">
+            <div class="find-course__content">
+              <div class="find-course__form">
+                <h1 class="h3">Find Your Course</h1>
+                <div class="row input-field">
+                  <div class="find-course__input-box col-6">
+                    <label for="" class="form-label">
+                      <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input type="text" class="form-control name-input" id="" placeholder="Name" />
+                  </div>
+                  <div class="find-course__input-box col-6">
+                    <label for="" class="form-label">
+                      <i class="fa-solid fa-envelope"></i>
+                    </label>
+                    <input type="email" class="form-control email-input" id="" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="row input-field">
+                  <div class="find-course__input-box">
+                    <label for="" class="form-label">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                    </label>
+                    <select name="lang-select" id="" class="form-control lang-input">
+                      <option value="english">English</option>
+                      <option value="english">Spanish</option>
+                      <option value="english">French</option>
+                      <option value="english">German</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row input-field">
+                  <div class="find-course__input-box mg-bt-48">
+                    <textarea class="form-control" name="" placeholder="Message" id="" rows="5"></textarea>
+                    <label for="" class="form-label">
+                      <i class="fa-solid fa-message"></i>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="find-course__input-box mg-bt-48"></div>
+                  <button type="submit" class="btn btn-primary pd-bt-16 d-inline-block w-50">
+                    SEND
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_image section_coverage_image">
+      <img src="http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/accent_bottom_wave_01.png" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="original-section footer">
+      <div class="container">
+        <div class="footer-wrapper mx-auto">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+              <div class="footer-content contact-us">
+                <div class="footer-content__header mg-bt-32">
+                  <h1 class="h6">Contact Us</h1>
+                </div>
+                <div class="footer-content__body">
+                  <div class="footer-content__item">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span> Franklin St, Greenpoint Ave</span>
+                  </div>
+                  <div class="footer-content__item">
+                    <span>
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span>+2342 5446 67</span>
+                  </div>
+                  <div class="footer-content__item">
+                    <span><i class="fa-solid fa-clock"></i></span>
+                    <span>Monday - Friday: 8 AM - 5 PM</span>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+              <div class="footer-content list">
+                <div class="footer-content__header">
+                  <h1 class="h6">Quick Links</h1>
+                </div>
+                <div class="footer-content__body">
+                  <div class="footer-content__item">
+                    <a href="#">Home</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Courses</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Schedule</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+              <div class="footer-content list">
+                <div class="footer-content__header">
+                  <h1 class="h6">About</h1>
+                </div>
+                <div class="footer-content__body">
+                  <div class="footer-content__item">
+                    <a href="#">About us</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Events</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Get quote</a>
+                  </div>
+                  <div class="footer-content__item">
+                    <a href="#">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mg-t-16">
+              <div class="footer-content newsletter">
+                <div class="footer-content__header mg-bt-32">
+                  <h1 class="h6">Newsletter</h1>
+                </div>
+                <div class="footer-content__body">
+                  <div class="mb-3">
+                    <input type="text" class="form-control newsletter-input" name="" id="" placeholder="YOUR EMAIL" />
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-secondary">
+                      subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+  <script>
+    var triggerEl = document.querySelector('#navId a');
+    bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+  </script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+  <!-- wow js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- js -->
+  <script type="module" src="/js/index.js"></script>
+</body>
+
+</html>

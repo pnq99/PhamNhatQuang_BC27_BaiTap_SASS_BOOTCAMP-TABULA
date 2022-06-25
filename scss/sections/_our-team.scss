@@ -1,0 +1,68 @@
+@import "../Helpers/_variables";
+
+.our-team {
+  position: relative;
+  .bottom_image {
+    bottom: 0;
+    z-index: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.our-team {
+  background-color: $color-secondary;
+  .our-team__wrapper {
+    position: relative;
+    z-index: 100;
+    .content-box {
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all ease-in-out 0.3s;
+      .content-box__card {
+        background-color: $color-white;
+        padding: 0 32px;
+        overflow: visible;
+        .card__img {
+          margin: 0 -32px;
+          overflow: hidden;
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+          }
+          img {
+            width: 100%;
+            transition: all ease-out 0.6s;
+          }
+        }
+        .card__content {
+          text-align: center;
+          .card__content-heading {
+            @extend .caption-fs;
+            @extend .text-color-primary;
+            @extend .fw-2;
+            text-transform: uppercase;
+          }
+          .card__content-name {
+            margin: 8px 0 16px 0;
+            line-height: 28px;
+            color: $color-text;
+            @extend .fw-3;
+            @extend .sub-title-l-fs;
+          }
+          .card__content-desc {
+            text-align: left;
+            @extend .p-m-fs;
+            @extend .fw-1;
+            color: $color-text;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0 30px 30px -10px rgba($color: #000000, $alpha: 0.2);
+      }
+    }
+  }
+}

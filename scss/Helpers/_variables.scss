@@ -1,0 +1,99 @@
+//COLOR
+
+$color-primary: #b71984;
+$color-secondary: #dcd1f2;
+$color-success: #198754;
+$color-info: #0dcaf0;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-light: #f8f9fa;
+$color-dark: #212529;
+$color-black: #000;
+$color-white: #fff;
+$color-text: #181818;
+
+$color-collection: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "success": $color-success,
+  "info": $color-info,
+  "warning": $color-warning,
+  "danger": $color-danger,
+  "light": $color-light,
+  "dark": $color-dark,
+  "text": $color-text,
+  "black": $color-black,
+  "white": $color-white,
+);
+
+//font size
+$fs-1: 1.2rem;
+$fs-2: 1.4rem;
+$fs-3: 1.6rem;
+$fs-4: 1.8rem;
+$fs-5: 2rem;
+$fs-6: 2.2rem;
+$fs-7: 2.4rem;
+
+$font-size-list: (
+  "caption": $fs-1,
+  "p-s": $fs-2,
+  "p-m": $fs-3,
+  "p-l": $fs-4,
+  "sub-title-s": $fs-5,
+  "sub-title-m": $fs-6,
+  "sub-title-l": $fs-7,
+);
+
+$heading-font-sizes: (
+  1: 6.4rem,
+  2: 5.6rem,
+  3: 4.8rem,
+  4: 4rem,
+  5: 3.2rem,
+  6: 2.8rem,
+);
+
+//font weight
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+//letter spacing
+$ls-1: 0.015rem;
+$ls-2: 0.03rem;
+
+$spacing-1: 8px;
+$spacing-2: 16px;
+$spacing-3: 24px;
+$spacing-4: 32px;
+$spacing-5: 48px;
+
+$spacing-list: (
+  "8": $spacing-1,
+  "16": $spacing-2,
+  "24": $spacing-3,
+  "32": $spacing-4,
+  "48": $spacing-5,
+);
+
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+  "extra-large-down": 1199.98px,
+  "large-down": 991.98px,
+  "medium-down": 767.98px,
+  "small-down": 575.98px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);

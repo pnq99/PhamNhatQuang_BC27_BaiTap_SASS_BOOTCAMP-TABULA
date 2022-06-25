@@ -1,0 +1,97 @@
+@import '../Helpers/variables';
+
+.find-course {
+  position: relative;
+  .bottom_image {
+    bottom: -1px;
+    z-index: -100;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.find-course {
+  .find-course__wrapper {
+    max-width: 1000px;
+    .find-course__content {
+      .find-course__header {
+        @extend .h3;
+      }
+      .find-course__body {
+        padding: 0 20px;
+        img {
+          max-width: 100%;
+          display: block;
+          margin: 0;
+          line-height: 0;
+          height: auto;
+        }
+      }
+    }
+    .find-course__content {
+      margin: 0 -16px;
+      .find-course__form {
+        background-color: $color-white;
+        padding: 24px 16px;
+        box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        h1 {
+          margin-bottom: 48px;
+          text-align: center;
+        }
+        .input-field {
+          margin: 0 -8px;
+        }
+        .find-course__input-box {
+          padding-left: 8px;
+          padding-right: 8px;
+          position: relative;
+          margin-bottom: 16px;
+
+          .form-label {
+            font-size: 14px;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            left: 24px;
+            color: $color-primary;
+          }
+          .form-control {
+            font-size: 14px;
+            padding: 8px 16px 8px 48px;
+            position: relative;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+            border-radius: 50px;
+            &:focus {
+              outline: none;
+            }
+            option {
+              color: rgba($color: #000000, $alpha: 0.1);
+            }
+          }
+          .name-input,
+          .email-input {
+            padding-top: 12px;
+            padding-bottom: 12px;
+          }
+          .lang-input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          select.form-control {
+            color: $color-text;
+          }
+          textarea.form-control {
+            border-radius: 16px;
+          }
+          textarea.form-control + .form-label {
+            top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

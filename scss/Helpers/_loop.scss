@@ -1,0 +1,96 @@
+@import "./variables";
+
+// COLOR
+
+@each $name, $color in $color-collection {
+  .text-color-#{$name} {
+    color: $color;
+  }
+
+  .bg-color-#{$name} {
+    background: $color;
+  }
+
+  .border-#{$name} {
+    border: 1px solid $color;
+  }
+}
+
+@each $name, $value in $heading-font-sizes {
+  .h#{$name} {
+    font-size: $value;
+    font-weight: $fw-4;
+    margin: 0;
+    padding: 0;
+    color: $color-text;
+  }
+}
+
+// FONT SIZE
+@each $name, $value in $font-size-list {
+  .#{$name}-fs {
+    font-size: $value;
+  }
+}
+
+// FONT WEIGHT
+@for $i from 1 to 5 {
+  .fw-#{$i} {
+    font-weight: 300 + $i * 100;
+  }
+}
+
+// SPACING
+@each $name, $value in $spacing-list {
+  .pd-left-#{$name} {
+    padding-left: $value;
+  }
+
+  .pd-right-#{$name} {
+    padding-right: $value;
+  }
+
+  .pd-bt-#{$name} {
+    padding-bottom: $value;
+  }
+
+  .pd-t-#{$name} {
+    padding-top: $value;
+  }
+
+  .pd-y-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .pd-x-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .mg-left-#{$name} {
+    margin-left: $value;
+  }
+
+  .mg-right-#{$name} {
+    margin-right: $value;
+  }
+
+  .mg-bt-#{$name} {
+    margin-bottom: $value;
+  }
+
+  .mg-t-#{$name} {
+    margin-top: $value;
+  }
+
+  .mg-y-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .mg-x-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}

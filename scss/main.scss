@@ -1,0 +1,20 @@
+@import './Helpers/variables';
+@import './Helpers/mixin';
+@import './Helpers/loop';
+
+@import './Base/reset';
+
+@import './Components/button';
+
+@import './Themes/transitions';
+
+@import './Layout/layout';
+@import './Layout/img-layout';
+
+@import './Vendors/display';
+
+@import './sections/header';
+@import './sections/banner';
+@import './sections/our-team';
+@import './sections/find-course';
+@import './sections/footer';
